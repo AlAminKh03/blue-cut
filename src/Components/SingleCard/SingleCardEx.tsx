@@ -2,7 +2,7 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
 import { GlassesProps } from "../Delivery/RegularDelivery";
-import { useState } from "react";
+
 interface GlassProps {
   GlassData: GlassesProps;
 }
@@ -51,6 +51,7 @@ const SingleCardEx = ({ GlassData }: GlassProps) => {
       </div>
       <h1 className="text-xl font-bold mt-2">{GlassData.name}</h1>
       <p>{GlassData.color}</p>
+      <p>{GlassData.price}</p>
       <button
         onClick={handleOrder}
         className="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700 transition-all ease-in duration-300"
